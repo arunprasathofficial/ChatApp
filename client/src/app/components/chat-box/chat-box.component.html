@@ -1,0 +1,13 @@
+<div class="container">
+  <div *ngIf="otherUser" class="header">
+    <h3>{{otherUser.firstName + ' ' + otherUser.lastName}}</h3>
+    <p class="subtitle">{{otherUser.email}}</p>
+  </div>
+  <div class="message-container" #scrollMe>
+    <app-message *ngFor="let message of selectedChat?.messages" [message]="message"></app-message>
+  </div>
+  <form class="text-area">
+    <input matInput [formControl]="messageContent" />
+    <button mat-mini-fab color="accent" (click)="handleSend()"><mat-icon>send</mat-icon></button>
+  </form>
+</div>

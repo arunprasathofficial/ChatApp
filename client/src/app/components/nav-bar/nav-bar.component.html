@@ -1,0 +1,9 @@
+<div class="container">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span><a routerLink="/" class="logo">ChatApp</a></span>
+      <span class="spacer"></span>
+      <button mat-raised-button *ngIf="logout" type="button" (click)="handleLogout()">Logout</button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>

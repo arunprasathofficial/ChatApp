@@ -1,0 +1,13 @@
+<mat-card class="card" [class.selected]="selected" (click)="handleSelect()">
+  <mat-card-header class="header">
+    <div class="title">
+      <mat-card-title>{{otherUser.firstName + ' ' + otherUser.lastName}}</mat-card-title>
+      <mat-card-subtitle class="subtitle" *ngIf="lastMessage">
+        {{(lastMessage.sender._id === otherUser._id ? otherUser.firstName : 'You') + ': ' + lastMessage.content}}
+      </mat-card-subtitle>
+    </div>
+  </mat-card-header>
+  <div *ngIf="newMessageCount" class="badge">
+    <div matBadge="15" [matBadge]="newMessageCount" matBadgeColor="warn"></div>
+  </div>
+</mat-card>

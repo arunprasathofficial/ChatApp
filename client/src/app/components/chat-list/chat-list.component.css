@@ -1,0 +1,26 @@
+.container {
+  border-right: lightgrey solid 1px;
+  width: 20vw;
+  height: 100%;
+  border-radius: 20px 20px 0;
+}
+
+.header {
+  background-color: #3f51b5;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: 20px 0 0 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+.subtitle {
+  color: grey;
+}
+
+.list {
+  overflow-y: auto;
+}

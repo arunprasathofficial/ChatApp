@@ -1,0 +1,15 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  border: 1px solid #b4b4b4;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.subtitle {
+  margin-bottom: 0;
+}
